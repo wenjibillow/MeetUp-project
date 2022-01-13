@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { useState } from 'react';
+import './App.css'
+
+import Header from './components/Header'
+import CardGrid from './components/CardGrid'
+
 
 function App() {
+  const [searchString, setSearchString] = useState<string>('')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header-test">
+        <Header searchText={searchString} setSearchText={setSearchString} />
       </header>
+      <main>
+        <CardGrid searchString= {searchString} />
+      </main>
+      <footer className="App-footer" data-testid="footer-test">
+       WTech &#169; 2022 
+      </footer>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
 }
@@ -14,18 +16,33 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(245, 244, 237);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
+  padding-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  /* font-display: left; */
+  align-self: flex-start;
+  margin-left: 6em;
+  color: tomato;
+}
+.text {
+  margin-top: 5em;
+}
+
+.magnify-search {
+  font-size: 0.7em;
+  display: inline-block;
+  position: relative;
+  left: -1.5em;
+  color: grey;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +52,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.activityCard .image {
+  background-color: #fcfcfc;
+  height: 10em;
+  margin-top: 2em;
+}
+.activityCard {
+  background-color: #d5d8d8;
+  text-align: center;
+  max-width: 15em;
+  border: 0.5em;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.createGroup-btn {
+  background-color: #28d9ec;
+  border-radius: 5px;
+  color: #0c0c0c;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5em;
+  padding: 1em;
+  margin-top: 0px;
+}
+
+.get-started-btn {
+  background-color: #28d9ec;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.commentImg img {
+  width: 46px;
+  height: 50%;
+  margin-right: 16px;
+}
+
+.register {
+  padding: 10px;
+  background-color: rgb(22, 26, 26);
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.register:hover {
+  background-color: rgb(36, 36, 36);
+}
+
+p {
+  font-size: 12px;
+}
+
+.App-footer {
+  background-color: #292a2b;
+  color: #fcfcfc;
+  padding: 4em;
 }
