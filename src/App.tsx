@@ -4,6 +4,7 @@ import './App.css'
 
 import Header from './components/Header'
 import CardGrid from './components/CardGrid'
+import AddEvent from './components/AddEvent';
 
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
         <Header searchText={searchString} setSearchText={setSearchString} />
       </header>
       <main>
-        <CardGrid searchString= {searchString} />
+        <AddEvent />
+        <CardGrid searchString={searchString} />
       </main>
       <footer className="App-footer" data-testid="footer-test">
-       WTech &#169; 2022 
+        WTech &#169; 2022
       </footer>
     </div>
   );
